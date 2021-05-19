@@ -4,10 +4,7 @@ app=Flask(__name__)
 def msg():
   mail=request.args.get("mail")
   amt=request.args.get("amt")
-  import telepot
-  bot=telepot.Bot("1810918140:AAEDH8WcSw3FVgI_93Yp9cJcTPUIZ58ODFg")
   msg="hello"
-  bot.sendMessage(1113599535,msg)
-  return "200"
+  return msg
 if __name__=="__main__":
   app.run()
