@@ -10,4 +10,4 @@ def msg():
   bot.sendMessage(1113599535,msg)
   return "200"
 if __name__=="__main__":
-  app.run(host='0.0.0.0', port=8080)
+  app.run()
