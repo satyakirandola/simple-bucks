@@ -36,6 +36,5 @@ $paypal="PayPal: "."mailpaypal";
 $data=$mail."\n".$amt."\n".$paypal;
 echo $data;
 $data=urlencode($data);
-echo "\n";
-echo $data;
+callAPI('GET',$url,false);
 ?>
