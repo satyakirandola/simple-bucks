@@ -30,12 +30,12 @@ function callAPI($method, $url, $data){
    curl_close($curl);
    return $result;
 }
-$mail="Email: ".$_GET["mail"];
-$amt="Amount: ".$_GET["amt"];
-$paypal="PayPal: ".$_GET["paypal"];
-$data=$mail."\r\n".$amt."\r\n".$paypal;
+$mail="Email: "."mail555";
+$amt="Amount: "."10";
+$paypal="PayPal: "."mailpaypal";
+$data=$mail."\n".$amt."\n".$paypal;
+echo $data;
 $data=urlencode($data);
-$url="https://api.telegram.org/bot1810918140:AAEDH8WcSw3FVgI_93Yp9cJcTPUIZ58ODFg/sendMessage?chat_id=1755250596&text=".$data;
-callAPI('GET",$url,false);
-echo "sent";
+echo "\n";
+echo $data;
 ?>
