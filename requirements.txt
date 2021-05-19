@@ -1,1 +1,2 @@
 telepot==12.7
+gunicorn==20.1.0
