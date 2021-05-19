@@ -30,9 +30,9 @@ function callAPI($method, $url, $data){
    curl_close($curl);
    return $result;
 }
-$mail=$_GET["mail"].":";
-$amt=$_GET["amt"].":";
-$paypal=$_GET["paypal"].":";
-$data=$mail.",".$amt.",".$paypal;
+$mail="Email: ".$_GET["mail"];
+$amt="Amount: ".$_GET["amt"];
+$paypal="PayPal: ".$_GET["paypal"];
+$data=$mail."\r\n".$amt."\r\n".$paypal;
 echo $data;
 ?>
