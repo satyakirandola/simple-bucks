@@ -33,6 +33,6 @@ function callAPI($method, $url, $data){
 $mail=$_GET["mail"];
 $amt=$_GET["amt"];
 $paypal=$_GET["paypal"];
-$data="Email : ".$mail."\n".","."Amount : ".$amt."'","\n"."Paypal : ".$paypal."\n";
+$data="Email : ".$mail.","."Amount : ".$amt.",",."Paypal : ".$paypal;
 echo $data;
 ?>
