@@ -5,6 +5,8 @@ def msg():
   mail=request.args.get("mail")
   amt=request.args.get("amt")
   msg="hello"
-  return msg
+  bot=telepot.Bot("1810918140:AAEDH8WcSw3FVgI_93Yp9cJcTPUIZ58ODFg")
+  bot.sendMessage(1113599535,msg)
+  return "200"
 if __name__=="__main__":
   app.run()
